@@ -4,8 +4,9 @@ Maven - Dependency Management.
 Awaitility + Allure.
 
 ## Running the tests
-Lombok Plugin needed to be installed in intelliJ/Eclipse
-Provide required data in `credentials.properties` file
+Lombok Plugin needed to be installed in intelliJ/Eclipse.
+
+Please Provide required data in `credentials.properties` file
 
 Example:
 ```
