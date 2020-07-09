@@ -6,8 +6,11 @@ Awaitility + Allure.
 ## Running the tests
 Lombok Plugin needed to be installed in intelliJ/Eclipse.
 
-Please Provide required data in `credentials.properties` file
+To Execute tests, run command `mvn test`.
 
+
+//TODO for future authentication tests if needed
+Please Provide required data in `credentials.properties` file
 Example:
 ```
 fullName=QA
@@ -16,4 +19,4 @@ proxyHost=proxy.host.example.com
 proxyPort=00
 ```
 
-To Execute tests, run command `mvn test`.
+
