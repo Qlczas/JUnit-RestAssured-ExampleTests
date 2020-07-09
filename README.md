@@ -6,7 +6,8 @@ Awaitility + Allure.
 ## Running the tests
 Lombok Plugin needed to be installed in intelliJ/Eclipse.
 
-To Execute tests, run command `mvn test`.
+To Execute tests,select Run using Test Runner on java.tests.messageBoard.BasicTests class.
+Or run command `mvn test`.
 
 
 //TODO for future authentication tests if needed
