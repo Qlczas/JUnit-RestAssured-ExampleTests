@@ -14,8 +14,6 @@ public class SignUpNewUserRequest {
         System.out.println("# TEST ENDPOINT: "+SIGN_UP);
         return authorize().log().all()
                 .body(requestBody)
-                .relaxedHTTPSValidation()
-              //  .proxy(CREDENTIALS.proxyHost(), CREDENTIALS.proxyPort())
                 .when()
                 .post(SIGN_UP)
                 .then().log().all();
