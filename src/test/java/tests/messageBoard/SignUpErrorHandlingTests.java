@@ -23,11 +23,6 @@ public class SignUpErrorHandlingTests {
     protected static UserData newUserDigitsOnlyUsernameData = buildNewUserWithGivenUsername("12345");
     protected static UserData newUserNoPasswordData = UserObject.buildNewUserWithGivenPassword("");
 
-    @BeforeAll
-    static void setup() {
-        System.out.println("Current API under test: "+API_PROPERTIES.getMessageBoardBaseUrl());
-    }
-
     @DisplayName("Should Not SignUp New User with Empty Username")
     @Test
     public void noSignUpUserWithMissingName() {
@@ -83,6 +78,6 @@ public class SignUpErrorHandlingTests {
                 .statusCode(SC_UNPROCESSABLE_ENTITY)
                 .body("message", is(ResponseValues.PASSWORD_INCORRECT_LENGTH));
     }
-    
+
     //TODO Verify in above manner the firstname, lastname and password fields
 }

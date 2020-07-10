@@ -16,12 +16,19 @@ public class AuthorizationHandler {
                 .spec(setAuthCredentials());
     }
 
+    @Step("Authorise With Given Credentials")
+    public static RequestSpecification authorize(String username, String password) {
+        return given()
+                .auth()
+                .basic(username, password)
+                .contentType(ContentType.JSON);
+    }
+
     private static RequestSpecification setAuthCredentials() {
         System.out.println("# Building Request type: JSON");
         return new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .addHeader("Authorization", "Bearer " + CREDENTIALS.getAccessToken())
-                //.addHeader("QaTest", "true")
                 .build();
     }
 }

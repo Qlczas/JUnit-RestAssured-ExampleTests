@@ -1,35 +1,35 @@
 package builders.objects;
 
 import builders.model.post.UserData;
-import testData.endpoints.messageBoard.TestUsers;
+import testData.endpoints.messageBoard.TestData;
 
 public class UserObject {
 
     public static UserData buildNewUser() {
         System.out.println("# Building New User Credentials");
         return UserData.builder()
-                .username(TestUsers.USERNAME1)
-                .password(TestUsers.PASSWORD1)
-                .firstname(TestUsers.FIRST_NAME1)
-                .lastname(TestUsers.LAST_NAME1)
+                .username(TestData.USERNAME_RANDOM)
+                .password(TestData.PASSWORD1)
+                .firstname(TestData.FIRST_NAME1)
+                .lastname(TestData.LAST_NAME1)
                 .build();
     }
 
     public static UserData buildNewUserWithGivenUsername(String username) {
         return UserData.builder()
                 .username(username)
-                .password(TestUsers.PASSWORD1)
-                .firstname(TestUsers.FIRST_NAME1)
-                .lastname(TestUsers.LAST_NAME1)
+                .password(TestData.PASSWORD1)
+                .firstname(TestData.FIRST_NAME1)
+                .lastname(TestData.LAST_NAME1)
                 .build();
     }
 
     public static UserData buildNewUserWithGivenPassword(String password) {
         return UserData.builder()
-                .username(TestUsers.USERNAME1)
+                .username(TestData.USERNAME_RANDOM)
                 .password(password)
-                .firstname(TestUsers.FIRST_NAME1)
-                .lastname(TestUsers.LAST_NAME1)
+                .firstname(TestData.FIRST_NAME1)
+                .lastname(TestData.LAST_NAME1)
                 .build();
     }
 }

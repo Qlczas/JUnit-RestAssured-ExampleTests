@@ -16,7 +16,7 @@ public class SignUpUserTests extends SignUpUserTestInit {
 
 
 //Another approach for the tests, using initializer
-//In Order to pass, update TestUsers.USERNAME1 value to not existing username!
+//In Order to pass, update TestData.USERNAME1 value to not existing username!
 
     @DisplayName("Should SignUp New User")
     @Test
