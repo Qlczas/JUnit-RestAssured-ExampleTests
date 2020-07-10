@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import testData.endpoints.messageBoard.TestUsers;
 
-import static builders.objects.userObject.buildNewUser;
+import static builders.objects.UserObject.buildNewUser;
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.Matchers.is;
@@ -44,7 +44,7 @@ public class BasicTests {
                 .body("modelType", is("UserModel"));
     }
 
-    @DisplayName("Should validate User")
+    @DisplayName("Should validate signed up User")
     @Test
     public void validateUser() {
         authorize().log().all()

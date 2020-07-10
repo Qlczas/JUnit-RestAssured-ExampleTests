@@ -6,10 +6,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.BeforeAll;
 import requestSpecifications.messageBoard.SignUpNewUserRequest;
-import requestSpecifications.messageBoard.ValidateUserRequest;
-import testData.endpoints.messageBoard.TestUsers;
 
-import static builders.objects.userObject.buildNewUser;
+import static builders.objects.UserObject.buildNewUser;
 
 public class SignUpUserTestInit {
 

@@ -15,7 +15,7 @@ public class SignUpUserTests extends SignUpUserTestInit {
     private static final Long RESPONSE_TIMEOUT = 10L;
 
 
-//Another aproach for the tests, using initializer
+//Another approach for the tests, using initializer
 //In Order to pass, update TestUsers.USERNAME1 value to not existing username!
 
     @DisplayName("Should SignUp New User")
